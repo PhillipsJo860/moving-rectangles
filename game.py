@@ -64,11 +64,13 @@ def main():
     # font_name = pygame.font.Font('Arial', 30)
     # text_position = [150, 100]
     # text = 'hi'
+    bg = pygame.image.load('download_slinger.jpg')
     rectangle_position = [250, 250, 100, 50]
 
     while running:
         running = handle_events(rectangle_position)
         screen.fill(config.COLOR_WHITE)
+        screen.blit(bg, (0,0))
 
         draw_rect(screen, rectangle_position, config.COLOR_CRIMSON, 0)
         # draw_text(screen, text, 30, config.COLOR_BLACK, text_position)
