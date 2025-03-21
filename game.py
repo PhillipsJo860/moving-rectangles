@@ -62,15 +62,16 @@ def main():
     running = True
 
     # font_name = pygame.font.Font('Arial', 30)
-    text_position = [150, 100]
-    text = 'hi'
-    
+    # text_position = [150, 100]
+    # text = 'hi'
+    rectangle_position = [250, 250, 100, 50]
+
     while running:
-        running = handle_events(text_position)
+        running = handle_events(rectangle_position)
         screen.fill(config.COLOR_WHITE)
 
-
-        draw_text(screen, text, 30, config.COLOR_BLACK, text_position)
+        draw_rect(screen, rectangle_position, config.COLOR_CRIMSON, 0)
+        # draw_text(screen, text, 30, config.COLOR_BLACK, text_position)
         
         # Calling a grid (Comment this out after you are done coding)
         grid(screen)
